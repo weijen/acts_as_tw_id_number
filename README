@@ -1,0 +1,16 @@
+ActsAsTwIdNumber
+================
+
+Specify this +acts_as+ extension if your model need to store Taiwan id number.
+This requires that you have a string column, which by default is called +tw_id_number+, or your can specify it yourself like example.
+
+
+Example
+=======
+
+class Person < ActiveRecord::Base
+    acts_as_tw_id_number :tw_id_number_column => :id_number
+end
+
+
+Copyright (c) 2008 [name of plugin creator], released under the MIT license
